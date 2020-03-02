@@ -225,8 +225,8 @@
 
 * Open log file:
 
-c      OPEN(UNIT=kout,FILE='tuvlog',STATUS='UNKNOWN')
-      OPEN(UNIT=kout,FILE='../'//'tuvlog'//'.txt',STATUS='UNKNOWN')
+      OPEN(UNIT=kout,FILE='tuvlog',STATUS='UNKNOWN')
+c      OPEN(UNIT=kout,FILE='../'//'tuvlog'//'.txt',STATUS='UNKNOWN')
 
 * ___ SECTION 1: SIMPLE INPUT VARIABLES --------------------------------
 ******* Read simple input variables from a file:
@@ -234,8 +234,8 @@ c      OPEN(UNIT=kout,FILE='tuvlog',STATUS='UNKNOWN')
 * can read interactively (intrct = .TRUE.) 
 * or in batch mode (intrct = .FALSE.)
 
-      intrct = .TRUE.
-c      intrct = .FALSE.
+c      intrct = .TRUE.
+      intrct = .FALSE.
       IF ( .NOT. intrct) inpfil = 'usrinp'
 
       CALL rdinp(intrct, 

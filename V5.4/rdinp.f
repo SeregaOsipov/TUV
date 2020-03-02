@@ -259,8 +259,8 @@ CSM         PAUSE
 ** check output file name
 
       CALL atrim(outfil, tmpfil, nlen)
-c      finame = tmpfil(1:nlen)
-      finame = '../'//tmpfil(1:nlen)//'.txt'
+      finame = tmpfil(1:nlen)
+c      finame = '../'//tmpfil(1:nlen)//'.txt'
       OPEN(UNIT=20,FILE=finame,STATUS='UNKNOWN',ERR=60)
       CLOSE(20)
       GO TO 65

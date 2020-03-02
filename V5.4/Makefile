@@ -36,7 +36,8 @@ FOBJS = numer.o functs.o orbit.o terint.o
 # FC   : FORTRAN compiler 
 #        Linux users:  try FC = g77
 #        Cray users :  try FC = f90
- FC = pgf90
+# FC = pgf90
+ FC = gfortran
 
 # FFLAGS : command line options to compiler call (if not set, default is
 #          probably some basic optimization level)

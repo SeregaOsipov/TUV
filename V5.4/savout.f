@@ -178,11 +178,11 @@
 
       IF(iout .NE. 6) THEN
          CALL atrim(outfil,finame,nlen)
-c         OPEN(UNIT=iout,FILE=finame(1:nlen),
-c     $        STATUS='UNKNOWN')
-         OPEN(UNIT=iout,
-     $        FILE='../'//finame(1:nlen)//'.txt',
+         OPEN(UNIT=iout,FILE=finame(1:nlen),
      $        STATUS='UNKNOWN')
+c         OPEN(UNIT=iout,
+c     $        FILE='../'//finame(1:nlen)//'.txt',
+c     $        STATUS='UNKNOWN')
       ENDIF
 
 ***** write out if looping over sza:

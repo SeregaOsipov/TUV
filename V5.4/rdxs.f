@@ -1384,7 +1384,7 @@
       INCLUDE 'params'
 
       INTEGER kdata
-      PARAMETER(kdata=1000)
+      PARAMETER(kdata=3000)
 
 * input: (altitude working grid)
       INTEGER nw
@@ -1415,7 +1415,8 @@
          read(kin,*)
    11 CONTINUE
 c      n = 681 
-      n = 704 
+c      n = 704 ! for SO2xs.all_default 
+      n = 2977
       DO 12, i = 1, n
          READ(kin,*) x1(i), y1(i)
          x1(i) = x1(i)/10.
